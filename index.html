@@ -1,0 +1,708 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tow Truck Insurance</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+    <link href='https://fonts.googleapis.com/css?family=Anybody' rel='stylesheet'>
+    <link href='https://fonts.googleapis.com/css?family=Poppins' rel='stylesheet'>
+    <link href='https://fonts.googleapis.com/css?family=Inter' rel='stylesheet'>
+    <link rel="stylesheet" href="assets/styles.css">
+</head>
+<body>
+   <div id="navbar"></div>
+
+   <section class="banner-section">
+  <img src="./assets/images/image.png" alt="Tow Truck Banner">
+</section>
+
+   <!-- truck-insurance-quote -->
+<section class="truck-insurance-quote">
+  <h2 class="quote-heading">Get a Free Truck Insurance Quote</h2>
+        <!-- Form Section -->
+        <div class="row">
+            <div class="col-12">
+                <section class="quote-section">
+                   
+
+                    <div class="container-fluid" id="form">
+                        <div class="form-container">
+                               <form id="singleTruckForm" action="zoho/forms/concrete_truck.php" class="quote-form active" method="POST" novalidate="">
+            <div class="row form-row">
+                <div class="col-md-4">
+                    <label class="form-label">Name<span class="required">*</span></label>
+                    <input type="text" class="form-control" name="full_name" required="" fdprocessedid="2ja3if">
+                    <div class="invalid-feedback"></div>
+                </div>
+                <div class="col-md-4">
+                    <label class="form-label">Types of vehicle<span class="required">*</span></label>
+                    <select class="form-select" name="vehicle_type" required="" fdprocessedid="znoqdb">
+                        <option value="" selected="" disabled="">Please Select</option>
+                        <option value="PRIME MOVER">PRIME MOVER</option>
+                        <option value="RIGID - Cab Chassis">RIGID - Cab Chassis</option>
+                        <option value="RIGID - Pantech body">RIGID - Pantech body</option>
+                        <option value="RIGID - Refrigerated Pantech">RIGID - Refrigerated Pantech</option>
+                        <option value="RIGID - Tautliner body">RIGID - Tautliner body</option>
+                        <option value="RIGID - Concrete Agitator/pumping">RIGID - Concrete Agitator/pumping</option>
+                        <option value="RIGID - Compactor body">RIGID - Compactor body</option>
+                        <option value="RIGID - Skip Bin body">RIGID - Skip Bin body</option>
+                        <option value="RIGID - Table Top">RIGID - Table Top</option>
+                        <option value="RIGID - Tipper body">RIGID - Tipper body</option>
+                        <option value="RIGID - Tow Truck">RIGID - Tow Truck</option>
+                        <option value="Forklift/Crane">Forklift/Crane</option>
+                        <option value="Planten Missionary">Plant and Machinery</option>
+                        <option value="Other Plants &amp; Equipment">Other Plants &amp; Equipment</option>
+                    </select>
+                    <div class="invalid-feedback"></div>
+                </div>
+                <div class="col-md-4">
+                    <label class="form-label">Registration Number<span class="required">*</span></label>
+                    <input type="text" class="form-control" name="registration_number" required="" fdprocessedid="hn9itnf">
+                    <div class="invalid-feedback"></div>
+                </div>
+            </div>
+            
+            <div class="row form-row">
+                <div class="col-md-4">
+                    <label class="form-label">Email<span class="required">*</span></label>
+                    <input type="email" class="form-control" name="email" required="" fdprocessedid="aljq4x">
+                    <div class="invalid-feedback"></div>
+                </div>
+                <div class="col-md-4">
+                    <label class="form-label">Carrying Capacity (GVM - TARE WEIGHT)<span class="required">*</span></label>
+                    <select class="form-select" name="carrying_capacity" required="" fdprocessedid="b6r956">
+                        <option value="" selected="" disabled="">Select capacity</option>
+                        <option value="10 ton &amp; over">10 ton &amp; over</option>
+                        <option value="5 ton to 9.9 ton">5 ton to 9.9 ton</option>
+                        <option value="3.5 ton to 4.99 ton">3.5 ton to 4.99 ton</option>
+                        <option value="2 ton to 3.49 ton">2 ton to 3.49 ton</option>
+                        <option value="under 2 ton">under 2 ton</option>
+                    </select>
+                    <div class="invalid-feedback"></div>
+                </div>
+                <div class="col-md-4">
+                    <label class="form-label">Sum Insured (Vehicle value)$<span class="required">*</span></label>
+                    <input type="text" class="form-control" style="border:2px solid #FF6B00" name="sum_insured" required="" fdprocessedid="gkmkvu">
+                    <div class="invalid-feedback"></div>
+                </div>
+            </div>
+            
+            <div class="row form-row">
+                <div class="col-md-4">
+                    <label class="form-label">Contact Number<span class="required">*</span></label>
+                    <input type="number" class="form-control" name="contact_number" required="" fdprocessedid="k3ck5f">
+                    <div class="invalid-feedback"></div>
+                </div>
+                <div class="col-md-4">
+                    <label class="form-label">Year, Make and Model (Truck details)<span class="required">*</span></label>
+                    <input type="text" class="form-control" name="truck_details" required="" fdprocessedid="cd70w">
+                    <div class="invalid-feedback"></div>
+                </div>
+                <div class="col-md-4">
+                    <label class="form-label">Marine (goods in transit cover)$<span class="required">*</span></label>
+                    <select class="form-select" style="border:2px solid #FF6B00" name="marine_cover" required="" fdprocessedid="ub19mb">
+                        <option value="" selected="" disabled="">Select cover amount</option>
+                        <option value="No cover needed">No cover needed</option>
+                        <option value="$50,000">$50,000</option>
+                        <option value="$100,000">$100,000</option>
+                        <option value="$200,000">$200,000</option>
+                        <option value="$500,000">$500,000</option>
+                        <option value="$1M">$1M</option>
+                        <option value="More">More</option>
+                    </select>
+                    <div class="invalid-feedback"></div>
+                </div>
+            </div>
+            
+            <div class="row form-row">
+                <div class="col-md-4">
+                    <label class="form-label">Company Name (if any)<span class="required">*</span></label>
+                    <input type="text" class="form-control" name="company_name" required="" fdprocessedid="i535sd">
+                    <div class="invalid-feedback"></div>
+                </div>
+                <div class="col-md-4">
+                    <label class="form-label">Base operation postcode and Suburb<span class="required">*</span></label>
+                    <input type="text" class="form-control" name="base_operation" required="" fdprocessedid="f4lwdf">
+                    <div class="invalid-feedback"></div>
+                </div>
+                <div class="col-md-4">
+                    <label class="form-label">Number of years relevant truck license held<span class="required">*</span></label>
+                    <select class="form-select is-invalid" name="year_truck_licence_held" required="" fdprocessedid="vp9ptp">
+                        <option value="" selected="" disabled="">Select years</option>
+                        <option value="1 year">1 year</option>
+                        <option value="2 years">2 years</option>
+                        <option value="3 years">3 years</option>
+                        <option value="4 years">4 years</option>
+                        <option value="5 years">5 years</option>
+                        <option value="5+ years">5+ years</option>
+                    </select>
+                    <!-- <div class="invalid-feedback">This field is required.</div> -->
+                </div>
+            </div>
+            
+            <div class="row form-row">
+                <div class="col-md-4">
+                    <label class="form-label">Address<span class="required">*</span></label>
+                    <input type="text" class="form-control" name="address" required="" fdprocessedid="avp658">
+                    <div class="invalid-feedback"></div>
+                </div>
+                <div class="col-md-4">
+                    <label class="form-label">Radius of operation<span class="required">*</span></label>
+                    <select class="form-select" name="radius_operation" required="" fdprocessedid="8i3ika">
+                        <option value="" selected="" disabled="">Select radius</option>
+                        <option value="250km">250km</option>
+                        <option value="400km">400km</option>
+                        <option value="600km">600km</option>
+                        <option value="1000km">1000km</option>
+                        <option value="1500km">1500km</option>
+                        <option value="Australia-wide">Australia-wide</option>
+                    </select>
+                    <div class="invalid-feedback"></div>
+                </div>
+                <div class="col-md-4">
+                    <label class="form-label">Number of truck insurance claims made in last 5 years $<span class="required">*</span></label>
+                    <select class="form-select" style="border:2px solid #FF6B00" name="number_truck_insurance" required="" fdprocessedid="dyyzko">
+                        <option value="" selected="" disabled="">Select number</option>
+                        <option value="None">None</option>
+                        <option value="One">One</option>
+                        <option value="Two">Two</option>
+                        <option value="Three">Three</option>
+                        <option value="Four">Four</option>
+                        <option value="Four+">Four+</option>
+                    </select>
+                    <div class="invalid-feedback"></div>
+                </div>
+            </div>
+            
+            <div class="row form-row">
+                <div class="col-md-4">
+                    <label class="form-label">Occupation<span class="required">*</span></label>
+                    <select class="form-select is-invalid" name="occupation" required="" fdprocessedid="36acyr">
+                        <option value="" selected="" disabled="">Select occupation</option>
+                        <option value="Transport Operator (goods carrying)">Transport Operator (goods carrying)</option>
+                        <option value="Excavation &amp; Earthmoving">Excavation &amp; Earthmoving</option>
+                        <option value="Builders &amp; Tradesmen">Builders &amp; Tradesmen</option>
+                        <option value="Construction &amp; Engineering">Construction &amp; Engineering</option>
+                        <option value="Manufacturer/Wholeseller">Manufacturer/Wholeseller</option>
+                        <option value="Other">Other</option>
+                    </select>
+                    <!-- <div class="invalid-feedback">This field is required.</div> -->
+                </div>
+                <div class="col-md-4">
+                    <label class="form-label">Types of goods carried<span class="required">*</span></label>
+                    <select class="form-select" name="type_goods_carried" required="" fdprocessedid="nofopv">
+                        <option value="" selected="" disabled="">Select goods type</option>
+                        <option value="General Goods">General Goods</option>
+                        <option value="Waste Disposal">Waste Disposal</option>
+                        <option value="Refrigerated Goods">Refrigerated Goods</option>
+                        <option value="Furniture">Furniture</option>
+                        <option value="Bulk Hazardous">Bulk Hazardous</option>
+                        <option value="Vehicle Carrier">Vehicle Carrier</option>
+                        <option value="Livestock">Livestock</option>
+                        <option value="Building Industry">Building Industry</option>
+                        <option value="Plant &amp; Equipment">Plant &amp; Equipment</option>
+                        <option value="Tipping">Tipping</option>
+                        <option value="Logging">Logging</option>
+                        <option value="Others">Others</option>
+                    </select>
+                    <div class="invalid-feedback"></div>
+                </div>
+                <div class="col-md-4">
+                    <label class="form-label">Public Liability cover required $<span class="required">*</span></label>
+                    <select class="form-select" style="border:2px solid #FF6B00" name="public_liability_cover" required="" fdprocessedid="k9eqn">
+                        <option value="" selected="" disabled="">Select cover amount</option>
+                        <option value="Not Required">Not Required</option>
+                        <option value="$10M">$10M</option>
+                        <option value="$20M">$20M</option>
+                        <option value="$30M">$30M</option>
+                        <option value="More">More</option>
+                    </select>
+                    <div class="invalid-feedback"></div>
+                </div>
+            </div>
+             <!-- <div class="col-md-6">
+        <label for="captcha" class="form-label">Security Verification *</label>
+        <div class="captcha-container" style="background: #f8f9fa; padding: 15px; border-radius: 8px; margin-bottom: 10px;">
+            <div class="captcha-question" style="font-weight: bold; color: #333; margin-bottom: 10px;">What is 5 - 0?</div>
+            <div class="captcha-input-group" style="display: flex; align-items: center; gap: 10px;">
+                <input type="number" class="form-control" id="captcha" name="captcha" placeholder="Enter your answer" style="max-width: 150px;" required="" fdprocessedid="8vegym">
+                <button type="button" class="btn btn-outline-secondary btn-sm" onclick="generateCaptcha()" title="Generate new question" fdprocessedid="qq2wup">
+                    ↻ New
+                </button>
+            </div>
+        </div>
+        <div class="invalid-feedback"></div> -->
+    </div>
+            
+            <div class="submit-container text-center">
+                <button type="submit" class="submit-btn" fdprocessedid="dygxtm">Submit</button>
+            </div>
+        </form>
+     </div>
+    </section>
+</section>
+
+<!-- Tow Truck Insurance -->
+<section class="Tow-Truck-Insurance">
+        <div class="container">
+            <!-- Main Title -->
+            <h1 class="section-titles">Tow Truck Insurance</h1>
+            
+            <!-- Description -->
+            <p class="description">
+                Tow truck insurance or wrecker insurance or recovery truck insurance is essential protection for business owners or operators facing daily risks on roads in Australia. Whether you're running a single tow truck or managing a fleet across NSW, QLD, VIC, or nationwide, tow truck liability insurance protects your business from costly claims and legal liabilities.
+            </p>
+            
+            <!-- What Does It Cover Section -->
+            <h2 class="section-subtitles">What Does Tow Truck Insurance Cover?</h2>
+            
+            <div class="row coverage-columns">
+                <!-- Left Column -->
+                <div class="col-lg-6 col-md-6">
+                    <div class="coverage-item">
+                        <div class="coverage-icon"></div>
+                        <span>Vehicle Damage Protection</span>
+                    </div>
+                    <div class="coverage-item">
+                        <div class="coverage-icon"></div>
+                        <span>Equipment & Tools Coverage</span>
+                    </div>
+                    <div class="coverage-item">
+                        <div class="coverage-icon"></div>
+                        <span>Management Liability</span>
+                    </div>
+                </div>
+                
+                <!-- Right Column -->
+                <div class="col-lg-6 col-md-6">
+                    <div class="coverage-item">
+                        <div class="coverage-icon"></div>
+                        <span>Vehicle Damage Protection</span>
+                    </div>
+                    <div class="coverage-item">
+                        <div class="coverage-icon"></div>
+                        <span>Public Liability</span>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Note Box -->
+            <div class="row justify-content-center">
+                <div class="col-lg-6 col-md-10 col-12">
+                    <div class="note-box">
+                        <strong>Note:</strong> Available Hook Liability Limits - $100K, $250K, $500K, $750K, or $1M.
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+    <section class="why-insurance-section">
+        <div class="container">
+            <!-- Header Section - Full Width -->
+            <div class="row mb-5">
+                <div class="col-lg-6 col-md-12">
+                    <h1 class="section-title">WHY TOW TRUCK INSURANCE IS ESSENTIAL IN AUSTRALIA</h1>
+                    <h2 class="section-subtitle">Legal Requirements and Real-World Protection</h2>
+                </div>
+                <div class="col-lg-6 col-md-12">
+                    <p class="section-description">
+                        Tow truck business insurance isn't just smart business practice - it's often legally required across Australian states. Here's why comprehensive coverage is critical
+                    </p>
+                </div>
+            </div>
+            
+            <!-- Cards Section -->
+            <div class="row">
+                <div class="col-12">
+                    <div class="cards-container">
+                        <!-- Slide 1 -->
+                        <div class="carousel-slide active">
+                            <div class="row">
+                                <div class="col-lg-4 col-md-6 col-sm-12">
+                                    <div class="insurance-card dark">
+                                        <div class="card-icon">
+                                            <i class="fas fa-gavel"></i>
+                                        </div>
+                                        <h3 class="card-title">Legal Compliance</h3>
+                                        <p class="card-description">Most states require minimum public liability insurance for commercial towing operations</p>
+                                    </div>
+                                </div>
+                                <div class="col-lg-4 col-md-6 col-sm-12">
+                                    <div class="insurance-card">
+                                        <div class="card-icon">
+                                            <i class="fas fa-shield-alt"></i>
+                                        </div>
+                                        <h3 class="card-title">Customer Vehicle Protection</h3>
+                                        <p class="card-description">On-hook insurance covers damage to vehicles being towed (worth $10,000 - $100,000 each)</p>
+                                    </div>
+                                </div>
+                                <div class="col-lg-4 col-md-6 col-sm-12">
+                                    <div class="insurance-card dark">
+                                        <div class="card-icon">
+                                            <i class="fas fa-exclamation-triangle"></i>
+                                        </div>
+                                        <h3 class="card-title">Third Party Claims</h3>
+                                        <p class="card-description">Protection against property damage claims when maneuvering in tight spaces</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <!-- Slide 2 -->
+                        <div class="carousel-slide">
+                            <div class="row">
+                                <div class="col-lg-4 col-md-6 col-sm-12">
+                                    <div class="insurance-card">
+                                        <div class="card-icon">
+                                            <i class="fas fa-tools"></i>
+                                        </div>
+                                        <h3 class="card-title">Equipment Protection</h3>
+                                        <p class="card-description">Comprehensive coverage for expensive towing equipment and specialized tools</p>
+                                    </div>
+                                </div>
+                                <div class="col-lg-4 col-md-6 col-sm-12">
+                                    <div class="insurance-card dark">
+                                        <div class="card-icon">
+                                            <i class="fas fa-users"></i>
+                                        </div>
+                                        <h3 class="card-title">Public Liability</h3>
+                                        <p class="card-description">Coverage for accidents involving pedestrians or other road users during operations</p>
+                                    </div>
+                                </div>
+                                <div class="col-lg-4 col-md-6 col-sm-12">
+                                    <div class="insurance-card">
+                                        <div class="card-icon">
+                                            <i class="fas fa-building"></i>
+                                        </div>
+                                        <h3 class="card-title">Business Interruption</h3>
+                                        <p class="card-description">Financial protection when accidents or claims force temporary business closure</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <!-- Custom Indicators -->
+                        <div class="custom-indicators">
+                            <div class="indicator-dot active" data-slide="0"></div>
+                            <div class="indicator-dot" data-slide="1"></div>
+                            <div class="indicator-dot" data-slide="2"></div>
+                            <div class="indicator-dot" data-slide="3"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+     <section class="insurance-section">
+        <div class="container">
+            <!-- First Row: Title + 2 Cards -->
+            <div class="row align-items-center first-row">
+                <!-- Left Side - Title -->
+                <div class="col-lg-4 col-md-12">
+                    <div class="title-section">
+                        <div>
+                            <h1 class="main-title">Why choose professional tow truck insurance?</h1>
+                            <p class="main-subtitle">Australia's Essential Business Protection</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Right Side - 2 Cards -->
+                <div class="col-lg-8 col-md-12">
+                    <div class="row">
+                        <!-- Fast Quote Processing -->
+                        <div class="col-lg-6 col-md-6 col-sm-12">
+                            <div class="feature-card">
+                                <div class="icon-box">
+                                    <svg class="icon" viewBox="0 0 24 24">
+                                        <path d="M12 2C13.1 2 14 2.9 14 4C14 5.1 13.1 6 12 6C10.9 6 10 5.1 10 4C10 2.9 10.9 2 12 2ZM21 9V7L15 1H5C3.89 1 3 1.89 3 3V19A2 2 0 0 0 5 21H19A2 2 0 0 0 21 19V9M19 19H5V3H13V9H19Z"/>
+                                        <circle cx="12" cy="15" r="3"/>
+                                    </svg>
+                                </div>
+                                <h3 class="feature-title">Fast Quote Processing</h3>
+                                <p class="feature-description">Get competitive tow truck insurance Australia quotes in under 24 hours with streamlined application processes designed specifically for busy operators.</p>
+                                <div class="arrow-icon">
+                                    <svg viewBox="0 0 24 24">
+                                        <path d="M4,11V13H16L10.5,18.5L11.92,19.92L19.84,12L11.92,4.08L10.5,5.5L16,11H4Z"/>
+                                    </svg>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <!-- Expert Claims Support -->
+                        <div class="col-lg-6 col-md-6 col-sm-12">
+                            <div class="feature-card">
+                                <div class="icon-box">
+                                    <svg class="icon" viewBox="0 0 24 24">
+                                        <path d="M16,17H7V16H16M16,15H7V14H16M16,12H7V13H16M16,11H7V10H16M20,6V18A2,2 0 0,1 18,20H6A2,2 0 0,1 4,18V6A2,2 0 0,1 6,4H18A2,2 0 0,1 20,6M18,6H6V18H18"/>
+                                        <circle cx="12" cy="8" r="2"/>
+                                    </svg>
+                                </div>
+                                <h3 class="feature-title">Expert Claims Support</h3>
+                                <p class="feature-description">Dedicated claims teams with tow truck industry experience ensure faster settlements and minimized business disruption when support is needed most.</p>
+                                <div class="arrow-icon">
+                                    <svg viewBox="0 0 24 24">
+                                        <path d="M4,11V13H16L10.5,18.5L11.92,19.92L19.84,12L11.92,4.08L10.5,5.5L16,11H4Z"/>
+                                    </svg>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Second Row: 3 Cards Full Width -->
+            <div class="row second-row">
+                <!-- Competitive Premiums -->
+                <div class="col-lg-4 col-md-6 col-sm-12">
+                    <div class="feature-card">
+                        <div class="icon-box">
+                            <svg class="icon" viewBox="0 0 24 24">
+                                <path d="M7,15H9C9,16.08 10.37,17 12,17C13.63,17 15,16.08 15,15C15,13.9 13.96,13.5 11.76,12.97C9.64,12.44 7,11.78 7,9C7,7.21 8.47,5.69 10.5,5.18V3H13.5V5.18C15.53,5.69 17,7.21 17,9H15C15,7.92 13.63,7 12,7C10.37,7 9,7.92 9,9C9,10.1 10.04,10.5 12.24,11.03C14.36,11.56 17,12.22 17,15C17,16.79 15.53,18.31 13.5,18.82V21H10.5V18.82C8.47,18.31 7,16.79 7,15Z"/>
+                            </svg>
+                        </div>
+                        <h3 class="feature-title">Competitive Premiums</h3>
+                        <p class="feature-description">Best tow truck insurance provider pricing through extensive insurer networks. Negotiate affordable premiums for tow trucks without compromising coverage quality.</p>
+                        <div class="arrow-icon">
+                            <svg viewBox="0 0 24 24">
+                                <path d="M4,11V13H16L10.5,18.5L11.92,19.92L19.84,12L11.92,4.08L10.5,5.5L16,11H4Z"/>
+                            </svg>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Nationwide Coverage -->
+                <div class="col-lg-4 col-md-6 col-sm-12">
+                    <div class="feature-card">
+                        <div class="icon-box">
+                            <svg class="icon" viewBox="0 0 24 24">
+                                <path d="M12,2C15.31,2 18,4.66 18,7.95C18,12.41 12,19 12,19S6,12.41 6,7.95C6,4.66 8.69,2 12,2M12,6A2,2 0 0,0 10,8A2,2 0 0,0 12,10A2,2 0 0,0 14,8A2,2 0 0,0 12,6M20,19C20,21.21 16.42,23 12,23C7.58,23 4,21.21 4,19C4,17.71 5.22,16.56 7.11,15.94L7.75,16.74C6.67,17.19 6,17.81 6,18.5C6,19.88 8.69,21 12,21C15.31,21 18,19.88 18,18.5C18,17.81 17.33,17.19 16.25,16.74L16.89,15.94C18.78,16.56 20,17.71 20,19Z"/>
+                            </svg>
+                        </div>
+                        <h3 class="feature-title">Nationwide Coverage</h3>
+                        <p class="feature-description">Comprehensive policies covering operations across all Australian states including NSW tow truck cover, QLD tow truck cover, VIC tow truck cover, and nationwide (Australia) interstate operations.</p>
+                        <div class="arrow-icon">
+                            <svg viewBox="0 0 24 24">
+                                <path d="M4,11V13H16L10.5,18.5L11.92,19.92L19.84,12L11.92,4.08L10.5,5.5L16,11H4Z"/>
+                            </svg>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Industry Experience -->
+                <div class="col-lg-4 col-md-6 col-sm-12">
+                    <div class="feature-card">
+                        <div class="icon-box">
+                            <svg class="icon" viewBox="0 0 24 24">
+                                <path d="M12,17.27L18.18,21L16.54,13.97L22,9.24L14.81,8.62L12,2L9.19,8.62L2,9.24L7.46,13.97L5.82,21L12,17.27Z"/>
+                            </svg>
+                        </div>
+                        <h3 class="feature-title">Industry Experience</h3>
+                        <p class="feature-description">Specialized commercial vehicle insurance with deep understanding of tow truck liability insurance requirements and industry-specific risks.</p>
+                        <div class="arrow-icon">
+                            <svg viewBox="0 0 24 24">
+                                <path d="M4,11V13H16L10.5,18.5L11.92,19.92L19.84,12L11.92,4.08L10.5,5.5L16,11H4Z"/>
+                            </svg>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Toll Free Section -->
+    <section class="toll-free-section">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-12 text-center">
+                    <h2 class="toll-free-title">Our Toll Free</h2>
+                    <div class="d-flex justify-content-center">
+                        <div class="phone-container">
+                            <div class="phone-icon">
+                                <i class="fas fa-phone"></i>
+                            </div>
+                            <h3 class="phone-number">+012 345 6789</h3>
+                        </div>
+                    </div>
+                    <p class="toll-free-subtitle">Call us if you have any questions - We are happy to help you most money possible.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="faq-section py-5">
+    <div class="container">
+        <h2 class="text-center fw-bold mb-5">Frequently Asked Questions</h2>
+
+        <div class="accordion" id="faqAccordion">
+
+            <!-- FAQ 1 -->
+            <div class="accordion-item border-0 mb-3 shadow-sm rounded-pill">
+                <h2 class="accordion-header">
+                    <button class="accordion-button collapsed rounded-pill" type="button" data-bs-toggle="collapse" data-bs-target="#faq1">
+                        <span class="faq-icon"><i class="fa-solid fa-arrow-up-right"></i></span>
+                        What is tow truck insurance and why do I need it?
+                    </button>
+                </h2>
+                <div id="faq1" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                    <div class="accordion-body">
+                        Tow truck insurance is designed to protect your towing business from financial losses...
+                    </div>
+                </div>
+            </div>
+
+            <!-- FAQ 2 -->
+            <div class="accordion-item border-0 mb-3 shadow-sm rounded-pill">
+                <h2 class="accordion-header">
+                    <button class="accordion-button rounded-pill" type="button" data-bs-toggle="collapse" data-bs-target="#faq2" aria-expanded="true">
+                        <span class="faq-icon active"><i class="fa-solid fa-arrow-right"></i></span>
+                        Is tow truck insurance mandatory in Australia?
+                    </button>
+                </h2>
+                <div id="faq2" class="accordion-collapse collapse show" data-bs-parent="#faqAccordion">
+                    <div class="accordion-body">
+                        <p class="mb-0">
+                            Yes, tow truck liability insurance is mandatory in most Australian states. Minimum public liability insurance is required for commercial towing licenses, typically ranging from $10–20 million coverage...
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- FAQ 3 -->
+            <div class="accordion-item border-0 mb-3 shadow-sm rounded-pill">
+                <h2 class="accordion-header">
+                    <button class="accordion-button collapsed rounded-pill" type="button" data-bs-toggle="collapse" data-bs-target="#faq3">
+                        <span class="faq-icon"><i class="fa-solid fa-arrow-up-right"></i></span>
+                        What does public liability insurance cover for tow trucks?
+                    </button>
+                </h2>
+                <div id="faq3" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                    <div class="accordion-body">
+                        Public liability insurance covers third-party injuries, property damage, and related claims...
+                    </div>
+                </div>
+            </div>
+
+            <!-- FAQ 4 -->
+            <div class="accordion-item border-0 mb-3 shadow-sm rounded-pill">
+                <h2 class="accordion-header">
+                    <button class="accordion-button collapsed rounded-pill" type="button" data-bs-toggle="collapse" data-bs-target="#faq4">
+                        <span class="faq-icon"><i class="fa-solid fa-arrow-up-right"></i></span>
+                        Can I get insurance cover for multiple tow trucks?
+                    </button>
+                </h2>
+                <div id="faq4" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                    <div class="accordion-body">
+                        Yes, fleet insurance policies are available for businesses with multiple tow trucks...
+                    </div>
+                </div>
+            </div>
+
+            <!-- FAQ 5 -->
+            <div class="accordion-item border-0 shadow-sm rounded-pill">
+                <h2 class="accordion-header">
+                    <button class="accordion-button collapsed rounded-pill" type="button" data-bs-toggle="collapse" data-bs-target="#faq5">
+                        <span class="faq-icon"><i class="fa-solid fa-arrow-up-right"></i></span>
+                        Do you provide tow truck insurance across all Australian states?
+                    </button>
+                </h2>
+                <div id="faq5" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                    <div class="accordion-body">
+                        Yes, our coverage extends to all Australian states and territories...
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+
+<script>
+    document.querySelectorAll('.accordion-button').forEach(button => {
+    button.addEventListener('click', () => {
+        const icon = button.querySelector('.faq-icon i');
+
+        // Reset all icons first
+        document.querySelectorAll('.faq-icon').forEach(iconWrapper => {
+            iconWrapper.classList.remove('active');
+            iconWrapper.querySelector('i').className = 'fa-solid fa-arrow-up-right';
+        });
+
+        // If this one is open after click, change icon
+        setTimeout(() => {
+            if (!button.classList.contains('collapsed')) {
+                const iconWrapper = button.querySelector('.faq-icon');
+                iconWrapper.classList.add('active');
+                icon.className = 'fa-solid fa-arrow-right';
+            }
+        }, 200); // Delay for smooth effect after Bootstrap toggle
+    });
+});
+
+</script>
+    
+
+   
+    
+
+    <script>
+        let currentSlide = 0;
+        const slides = document.querySelectorAll('.carousel-slide');
+        const indicators = document.querySelectorAll('.indicator-dot');
+        
+        function showSlide(index) {
+            // Map dots to slides: dots 1&3 -> slide 0, dots 2&4 -> slide 1
+            const slideIndex = (index === 0 || index === 2) ? 0 : 1;
+            
+            // Hide all slides
+            slides.forEach(slide => slide.classList.remove('active'));
+            indicators.forEach(dot => dot.classList.remove('active'));
+            
+            // Show current slide
+            slides[slideIndex].classList.add('active');
+            indicators[index].classList.add('active');
+            currentSlide = index;
+        }
+        
+        function nextSlide() {
+            currentSlide = (currentSlide + 1) % 4; // 4 dots total
+            showSlide(currentSlide);
+        }
+        
+        // Auto-advance every 4 seconds
+        setInterval(nextSlide, 4000);
+        
+        // Handle indicator clicks
+        indicators.forEach((dot, index) => {
+            dot.addEventListener('click', () => {
+                showSlide(index);
+            });
+        });
+    </script>
+
+
+   <div id="footer"></div>
+
+    <script>
+        fetch('navbar.html')
+        .then(res => res.text())
+        .then(data => document.getElementById('navbar').innerHTML = data);
+
+        fetch('footer.html')
+        .then(res => res.text())
+        .then(data => document.getElementById('footer').innerHTML = data);
+    </script>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
