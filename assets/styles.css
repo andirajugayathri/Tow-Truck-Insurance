@@ -10,8 +10,6 @@
             font-family: 'Poppins';
             font-weight: 500;
             font-size: 16px;
-
-
         }
 
         .navbar-nav {
@@ -61,18 +59,18 @@
             color: #ff6b35;
         }
 
-        .btn-get-quote {
+        .btn-get-quotes {
             background-color: #ff6b35;
             border: none;
             color: white;
             padding: 10px 25px;
-            border-radius: 5px;
+            border-radius: 10px;
             font-weight: 600;
             text-decoration: none;
             transition: background-color 0.3s;
         }
 
-        .btn-get-quote:hover {
+        .btn-get-quotes:hover {
             background-color: #e55a2b;
             color: white;
         }
@@ -533,7 +531,7 @@
             right: -30px;
             width: 80px;
             height: 80px;
-            background: #ffb8a3;
+            background: #FDEBE3;
             border-radius: 50%;
            
         }
@@ -562,11 +560,21 @@
             z-index: 3;
             box-shadow: 0 4px 15px rgba(0,0,0,0.1);
         }
-        
-        .card-icon i {
-            font-size: 1.5rem;
-            color: #1e3a8a;
+
+        .card-icon.darks{
+            width: 60px;
+            height: 60px;
+            background: #1e3a8a;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-bottom: 1.5rem;
+            position: relative;
+            z-index: 3;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.1);
         }
+
         
         .card-title {
             font-size: 1.3rem;
@@ -672,18 +680,24 @@
         }
         
         .main-title {
-            font-size: 3.2rem;
-            font-weight: 700;
+           
             color: #2c3e50;
-            margin-bottom: 20px;
             line-height: 1.2;
+            font-family: "Poppins";
+            font-weight: 700;
+            font-size: 30px;
+            line-height: 40px;
+            text-transform: lowercase;
+
         }
         
         .main-subtitle {
-            font-size: 1.2rem;
             color: #7f8c8d;
             margin-bottom: 0;
             font-weight: 400;
+            font-family: "Poppins";
+            font-weight: 400;
+            font-size: 18px;
         }
         
         .feature-card {
@@ -738,8 +752,8 @@
         
         .arrow-icon {
             position: absolute;
-            bottom: -21px;
-            right: -17px;
+            bottom: -28px;
+            right: -20px;
             width: 80px;
             height: 80px;
             background: linear-gradient(135deg, #ff6b35, #ff8c42);
@@ -765,7 +779,7 @@
             display: flex;
             align-items: center;
             height: 100%;
-            padding-right: 40px;
+            padding-right: 50px;
         }
         
         .second-row {
@@ -1044,10 +1058,10 @@
 
 /* ===== Form Box ===== */
 .quote-section {
-    background-color: #FFEFE3;
+    background-color: #FFF1E5;
     padding: 25px;
     border-radius: 12px;
-    box-shadow: 0px 2px 8px rgba(0,0,0,0.1);
+    box-shadow: 0px 4px 11.6px 0px #00000080;
 }
 
 /* Labels */
@@ -1316,4 +1330,138 @@
             .fhp-contact-form-card {
                 padding: 25px;
             }
+        }
+
+
+
+
+
+         .banner-section {
+            position: relative;
+            min-height: 650px;
+            background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
+            background-image: url('./images/tow-truck-banner.png');
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            display: flex;
+            align-items: center;
+            overflow: hidden;
+        }
+
+     
+
+        .banner-content {
+            position: relative;
+            z-index: 2;
+            max-width: 600px;
+        }
+
+        .banner-badge {
+            background: #FFF1E5;
+            font-family: 'Poppins';
+            font-weight: 600;
+            font-size: 28px;
+            color: #FF7200;
+            padding: 8px 20px;
+            border-radius: 20px;
+            display: inline-block;
+            margin-bottom: 20px;
+        }
+
+        .banner-title {
+            color: #013469;
+            font-weight: 700;
+            line-height: 1.1;
+            margin-bottom: 20px;
+            font-family: "Anybody";
+            font-size: 56px;
+        }
+
+        .banner-subtitle {
+            color: #626262;
+            line-height: 1.6;
+            margin-bottom: 30px;
+            font-family: 'Poppins';
+            font-weight: 400;
+            font-size: 20px;
+        }
+
+        .btn-get-quote {
+            background: #ff6b35;
+            border: none;
+            color: white;
+            font-family: "Poppins";
+            font-weight: 700;
+            padding: 10px 41px;
+            font-size: 16px;
+            border-radius: 25px;
+            text-decoration: none;
+            display: inline-block;
+            transition: all 0.3s ease;
+            box-shadow: 0 4px 15px rgba(255, 107, 53, 0.3);
+        }
+
+        .btn-get-quote:hover {
+            background: #e55a2b;
+            color: white;
+            transform: translateY(-2px);
+            box-shadow: 0 6px 20px rgba(255, 107, 53, 0.4);
+        }
+
+
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            .banner-section {
+                min-height: 400px;
+                padding: 40px 0;
+            }
+
+            .banner-title {
+                font-size: 2.5rem;
+            }
+
+            .banner-subtitle {
+                font-size: 1rem;
+            }
+
+            .btn-get-quote {
+                padding: 12px 25px;
+                font-size: 15px;
+            }
+
+            .banner-content {
+                max-width: 100%;
+            }
+        }
+
+        @media (max-width: 576px) {
+            .banner-section {
+                min-height: 350px;
+                padding: 30px 0;
+            }
+
+            .banner-title {
+                font-size: 2rem;
+            }
+
+            .banner-badge {
+                font-size: 13px;
+                padding: 6px 16px;
+            }
+
+            .btn-get-quote {
+                padding: 12px 24px;
+                font-size: 14px;
+            }
+        }
+
+        /* Fallback for when background image doesn't load */
+        .banner-section.no-image {
+            background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 50%, #dee2e6 100%);
+        }
+
+        .banner-section.no-image::before {
+            background: linear-gradient(135deg, rgba(255,255,255,0.9) 0%, rgba(255,255,255,0.7) 50%, rgba(255,255,255,0.4) 100%);
         }
