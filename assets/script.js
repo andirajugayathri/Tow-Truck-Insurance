@@ -71,12 +71,9 @@ document.addEventListener('DOMContentLoaded', function() {
             }, 100);
         }
 
-        // Auto-update control buttons
         document.getElementById('testimonialsCarousel').addEventListener('slid.bs.carousel', function () {
             updateControlButtons();
         });
-
-        // Add smooth transitions and hover effects
         document.addEventListener('DOMContentLoaded', function() {
             const cards = document.querySelectorAll('.testimonial-card');
             cards.forEach(card => {
@@ -91,3 +88,4 @@ document.addEventListener('DOMContentLoaded', function() {
                 });
             });
         });
+        
