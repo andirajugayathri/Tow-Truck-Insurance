@@ -674,7 +674,7 @@
                             <div class="carousel-inner">
                                 <div class="carousel-item active">
                                     <div class="row">
-                                        <div class="col-md-6 mb-4">
+                                        <div class="col-lg-6 col-12 mb-4">
                                             <div class="testimonial-card">
                                                 <div class="testimonial-header">
                                                     <i class="fas fa-quote-left quote-icon"></i>
@@ -696,7 +696,7 @@
                                                 </div>
                                             </div>
                                         </div>
-                                        <div class="col-md-6 mb-4">
+                                        <div class="col-lg-6 col-12 mb-4">
                                             <div class="testimonial-card">
                                                 <div class="testimonial-header">
                                                     <i class="fas fa-quote-left quote-icon"></i>
@@ -722,7 +722,7 @@
                                 </div>
                                 <div class="carousel-item">
                                     <div class="row">
-                                        <div class="col-md-6 mb-4">
+                                        <div class="col-lg-6 col-12 mb-4">
                                             <div class="testimonial-card">
                                                 <div class="testimonial-header">
                                                     <i class="fas fa-quote-left quote-icon"></i>
@@ -744,7 +744,7 @@
                                                 </div>
                                             </div>
                                         </div>
-                                        <div class="col-md-6 mb-4">
+                                        <div class="col-lg-6 col-12 mb-4">
                                             <div class="testimonial-card">
                                                 <div class="testimonial-header">
                                                     <i class="fas fa-quote-left quote-icon"></i>
@@ -864,97 +864,7 @@
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
 <script src="assets/script.js"></script>
-
-
-
-
    <div id="footer"></div>
-  <script>
-    class TowTruckCarousel {
-            constructor() {
-                this.slidesContainer = document.getElementById('towtrk-slides');
-                this.indicators = document.querySelectorAll('.towtrk-indicator');
-                this.currentSlide = 0;
-                this.isDesktop = window.innerWidth >= 768;
-                this.totalSlides = this.isDesktop ? 2 : 6; // 2 slides for desktop, 6 for mobile
-                
-                this.init();
-            }
-
-            init() {
-                this.bindEvents();
-                this.updateCarousel();
-                this.startAutoPlay();
-
-                // Handle resize
-                window.addEventListener('resize', () => {
-                    const wasDesktop = this.isDesktop;
-                    this.isDesktop = window.innerWidth >= 768;
-                    
-                    if (wasDesktop !== this.isDesktop) {
-                        this.totalSlides = this.isDesktop ? 2 : 6;
-                        this.currentSlide = 0;
-                        this.updateCarousel();
-                    }
-                });
-            }
-
-            bindEvents() {
-                this.indicators.forEach((indicator, index) => {
-                    indicator.addEventListener('click', () => {
-                        // Adjust index based on screen size
-                        if (this.isDesktop && index >= 2) return; // Only first 2 indicators work on desktop
-                        if (!this.isDesktop && index >= 6) return; // Only first 6 indicators work on mobile
-                        
-                        this.currentSlide = index;
-                        this.updateCarousel();
-                        this.resetAutoPlay();
-                    });
-                });
-            }
-
-            updateCarousel() {
-                // Update indicators - show only relevant ones
-                this.indicators.forEach((indicator, index) => {
-                    if (this.isDesktop) {
-                        // Desktop: show only first 2 indicators
-                        indicator.style.display = index < 2 ? 'block' : 'none';
-                        indicator.classList.toggle('active', index === this.currentSlide);
-                    } else {
-                        // Mobile: show all 6 indicators
-                        indicator.style.display = index < 6 ? 'block' : 'none';
-                        indicator.classList.toggle('active', index === this.currentSlide);
-                    }
-                });
-
-                // Update slides position
-                const translateX = -this.currentSlide * 100;
-                this.slidesContainer.style.transform = `translateX(${translateX}%)`;
-            }
-
-            nextSlide() {
-                this.currentSlide = (this.currentSlide + 1) % this.totalSlides;
-                this.updateCarousel();
-            }
-
-            startAutoPlay() {
-                this.autoPlayInterval = setInterval(() => {
-                    this.nextSlide();
-                }, 4000);
-            }
-
-            resetAutoPlay() {
-                clearInterval(this.autoPlayInterval);
-                this.startAutoPlay();
-            }
-        }
-
-        // Initialize carousel when DOM is loaded
-        document.addEventListener('DOMContentLoaded', () => {
-            new TowTruckCarousel();
-        });
-   </script>
-
     <script>
         fetch('navbar.html')
         .then(res => res.text())
