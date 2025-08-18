@@ -514,6 +514,10 @@
             font-weight: 700;
             font-size: 40px;
         }
+        .contact-no{
+            text-decoration: none;
+            color: #FFFFFF;
+        }
 
         .phone-icon {
             width: 66px;
@@ -1440,6 +1444,10 @@
             font-size: 18px;
             line-height: 26px;
             overflow-wrap: anywhere;
+        }
+        .fhp-contactno{
+            text-decoration: none;
+            color: #5A7779;
         }
 
         .fhp-form-control {
