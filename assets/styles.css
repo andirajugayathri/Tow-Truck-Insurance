@@ -965,7 +965,7 @@
             width: 66px;
             height: 66px;
             border-radius: 50%;
-            background-image: url('/assets/images/avatar-img.jpg');
+            background-image: url('./images/avatar-img.jpg');
             background-position: center;
             background-size: cover;
             background-repeat: no-repeat;
