@@ -277,11 +277,11 @@
         .contact-value {
             color: #FFFFFF;
             font-size: 0.95rem;
-            line-height: 1.4;
+            text-decoration: none;
         }
 
         .footer-bottom {
-            background-color: #ff6b35;
+            background-color: #FF7200;
             padding: 20px 0;
             margin-top: 50px;
         }
@@ -1244,8 +1244,6 @@ Why choose professional tow truck insurance? */
 
 
    /* ===== Contact Section ===== */
-
-   /* Banner Section */
 .banner-sections {
     position: relative;
     max-height: 700px;
@@ -1431,11 +1429,11 @@ Why choose professional tow truck insurance? */
             min-width: 50px;
             height: 50px;
             border-radius: 25px;
-            background-color: #ffefef;
+            background-color: #FDEBE3;
             display: flex;
             align-items: center;
             justify-content: center;
-            color: #F80208;
+            color: #FF7200;
         }
 
         .fhp-contact-info-content h5 {
@@ -1484,7 +1482,7 @@ Why choose professional tow truck insurance? */
             left: 40px;
             top: 50%;
             transform: translateY(-50%);
-            color: #ff0000;
+            color: #FF7200;
         }
         .messages{
             padding-left: 20px;
