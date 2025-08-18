@@ -1384,33 +1384,34 @@ Why choose professional tow truck insurance? */
         }
 
         .fhp-heading-main {
-            color: #2A467B;
+            color: #013469;
             font-weight: 600;
             font-size: 30px;
             line-height: 45px;
+            font-family: "Inter";
         }
 
         .fhp-heading-sub {
-            color: #2A467B;
+            color: #013469;
             font-weight: 700;
             font-size: 30px;
             line-height: 45px;
-            margin: 20px 0;
         }
 
         .fhp-section-text {
-            color: #5A7779;
+            color: #626262;
             font-size: 18px;
             font-weight: 400;
             padding-bottom: 30px;
             line-height: 26.5px;
-            border-bottom: 2px solid #646464;
+            border-bottom: 1px solid #626262;
+            font-family: "Poppins";
         }
 
         .fhp-contact-information {
             margin-top: -56px;
             padding-bottom: 13px;
-            border-bottom: 2px solid #646464;
+            border-bottom: 1px solid #626262;
         }
 
         .fhp-contact-form-card {
@@ -1423,6 +1424,7 @@ Why choose professional tow truck insurance? */
             display: flex;
             align-items: center;
             gap: 15px;
+            margin-top: -21px;
         }
 
         .fhp-contact-icon {
@@ -1461,6 +1463,7 @@ Why choose professional tow truck insurance? */
             line-height: 1.5;
             border-radius: 28px;
             border: 1px solid #e0e0e0;
+            font-family: "Poppins";
         }
 
         .fhp-form-control:focus {
