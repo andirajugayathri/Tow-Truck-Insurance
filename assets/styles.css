@@ -512,7 +512,7 @@
         .cta-section {
             background: 
                 linear-gradient(135deg, rgba(30, 60, 114, 0.9) 0%, rgba(42, 82, 152, 0.9) 100%),
-                url('/assets/images/tow-truck-operator.jpg');
+                url('./images/tow-truck-operator.jpg');
             background-size: cover;
             background-position: center;
             background-repeat: no-repeat;
@@ -814,7 +814,7 @@
          .testimonials-section {
             background: 
                 linear-gradient(135deg, rgba(30, 60, 114, 0.9) 0%, rgba(42, 82, 152, 0.9) 100%),
-                url('/assets/images/tow-truck-operator.jpg');
+                url('./images/tow-truck-operator.jpg');
             background-size: cover;
             background-position: center;
             background-repeat: no-repeat;
