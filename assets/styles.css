@@ -331,7 +331,6 @@
         .footer-bottom {
             background-color: #FE4C02;
             padding: 20px 0;
-            margin-top: 50px;
         }
 
         .copyright {
@@ -1614,7 +1613,7 @@
 
          .banner-section {
             position: relative;
-            min-height: 650px;
+            min-height: 630px;
             background-image: url('./images/Tow-Truck-Insurance.png');
             background-size: cover;
             background-position: center;
