@@ -209,9 +209,10 @@
 
         .footer-description {
             color: #FFFFFF;
-            line-height: 1.6;
             margin-bottom: 30px;
-            font-size: 0.95rem;
+            font-size: 16px;
+            font-weight: 400;
+            font-family: "Poppins";
         }
 
         .social-links {
@@ -242,8 +243,9 @@
 
         .footer-title {
             color: #ffffff;
-            font-size: 1.3rem;
-            font-weight: 600;
+            font-size: 25px;
+            font-family: "Inter";
+            font-weight: 700;
             margin-bottom: 25px;
             position: relative;
         }
@@ -278,9 +280,10 @@
         .footer-links a {
             color: #FFFFFF;
             font-size: 16px;
+            font-family: "Poppins";
+            font-weight: 400;
             text-decoration: none;
             transition: color 0.3s ease;
-            font-size: 0.95rem;
         }
 
         .footer-links a:hover {
@@ -317,14 +320,17 @@
 
         .contact-label {
             color: #FE4C02;
-            font-weight: 600;
-            font-size: 1rem;
+            font-weight: 700;
+            font-size: 18px;
+            font-family: "Poppins";
             margin-bottom: 5px;
         }
 
         .contact-value {
             color: #FFFFFF;
-            font-size: 0.95rem;
+            font-size: 16px;
+            font-family: "Poppins";
+            font-weight: 400;
             text-decoration: none;
         }
 
@@ -381,7 +387,7 @@
             font-size: 40px;
             font-weight: 700;
             margin-bottom: 20px;
-            color: #ff6b35;
+            color: #FF7200;
             font-family: 'Inter';
         }
 
@@ -393,8 +399,9 @@
         }
 
         .description {
-            font-size: 1.1rem;
+            font-size: 18px;
             color: #626262;
+            font-weight: 400;
             margin-bottom: 1.5rem;
             font-family: 'Poppins';
         }
@@ -406,14 +413,14 @@
             margin-bottom: 12px;
             font-weight: 400;
             font-family: 'Poppins';
-            font-size: 1.1rem;
-            color: #6c757d;
+            font-size: 18px;
+            color: #626262;
         }
 
         .coverage-icon {
             width: 28px;
             height: 28px;
-            background-color: #ff6b35;
+            background-color: #FF7200;
             border-radius: 50%;
             display: flex;
             color:#ffff;
@@ -433,13 +440,15 @@
             color: white;
             padding: 15px 25px;
             border-radius: 8px;
-            font-family: "Inter";
+            font-family: 'Anybody';
             font-weight: 500;
             margin-top: 20px;
+            font-size: 18px;
             text-align: center;
         }
         .note-box strong{
             color:#FF7200;
+            font-family: "Inter";
         }
 
         .coverage-columns {
@@ -697,7 +706,7 @@
         .icon-box img {
             width: 55px;
             height: 55px;
-            fill: #ff6b35;
+            fill: #FF7200;
         }
         
         .feature-title {
@@ -723,7 +732,7 @@
             right: -40px;
             width: 120px;
             height: 120px;
-            background: linear-gradient(135deg, #ff6b35, #ff8c42);
+            background: linear-gradient(135deg, #FF7200, #ff8c42);
             border-radius: 50%;
             display: flex;
             align-items: center;
@@ -887,7 +896,7 @@
         }
 
         .testimonials-icon {
-            background: #ff6b35;
+            background: #FF7200;
             color: white;
             width: 36px;
             height: 36px;
@@ -972,7 +981,7 @@
         }
 
         .quote-icon {
-            color: #ff6b35;
+            color: #FF7200;
             font-size: 24px;
         }
 
@@ -1055,8 +1064,8 @@
         }
 
         .carousel-control-custom.active {
-            background: #ff6b35;
-            border-color: #ff6b35;
+            background: #FF7200;
+            border-color: #FF7200;
             color: #ffff;
         }
 
@@ -1121,6 +1130,10 @@
 
 .text-orange {
   color: #FF7200;
+  font-family: "Inter";
+  font-weight: 700;
+  font-size: 36px;
+
 }
 
 .accordion{
@@ -1130,7 +1143,9 @@
 
 .accordion-button {
   font-weight: 500;
-  color: #0b2c00;
+  color: #212529;
+  font-family: "Poppins";
+  font-size: 16px;
   background-color: white;
   box-shadow: none !important;
   padding: 1rem 1.5rem;
@@ -1162,10 +1177,14 @@
 .accordion-body p{
   border-left: 2px solid #013469;
   padding-left: 10px;
+  color: #626262;
+  font-family: "Poppins";
+  font-size: 14px;
+  font-weight: 400;
 }
  
 .faq-icon {
-  background-color: #0a2d4d;
+  background-color: #013469;
   color: white;
   border-radius: 50%;
   width: 30px;
@@ -1902,7 +1921,7 @@
         }
 
         .towtrk-hero-title {
-            color: #ff6b35;
+            color: #FF7200;
             font-size: 40px;
             font-weight: 700;
             margin-bottom: 10px;
@@ -1986,11 +2005,11 @@
         }
 
         .towtrk-card-title {
-            color: #2c5aa0;
+            color: #013469;
             font-size:22px;
             font-weight: 700;
             margin-bottom: 15px;
-            font-family: "Inter";
+            font-family: "Anybody";
         }
 
         .towtrk-card-text {
