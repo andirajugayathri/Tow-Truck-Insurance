@@ -1125,6 +1125,38 @@
                 margin-top: 22px;
             }
         }
+        @media (min-width: 769px) and (max-width:992px){
+            .testimonial-card{
+                margin-top: 23px; 
+            }
+            .carousel-control-custom{
+                margin-bottom: 30px;
+            }
+            
+            .towtrk-card {
+                height: 350px;
+                padding: 30px 25px;
+            }
+            .banner-content {
+                margin-left: 0!important;
+            }
+            .section-titles{
+               font-size: 33px;
+            }
+            .description {
+                font-size: 15px;
+            }
+            .section-subtitles {
+                font-size: 22px;
+            }
+            .coverage-item{
+                font-size: 16px;
+            }
+            .note-box {
+                font-size: 16px;
+            }
+        }
+
 
 /* faq */
 
