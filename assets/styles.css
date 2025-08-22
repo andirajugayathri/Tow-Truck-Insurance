@@ -486,7 +486,7 @@
 
             .description {
                 font-size: 1rem;
-                text-align: center;
+                text-align:left;
             }
 
             .coverage-item {
@@ -600,8 +600,11 @@
 
             .cta-section {
                 flex-direction: column;
-                text-align: center;
+                text-align: left;
                 gap: 1rem;
+            }
+            .cta-content p {
+                font-size: 18px;
             }
         }
 
