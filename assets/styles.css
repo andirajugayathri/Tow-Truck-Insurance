@@ -13,8 +13,11 @@
         }
 
         .navbar-brand img {
-            max-height: 50px;
+            max-height: 80px;
             height: auto;
+            margin-top: -20px;
+            position: absolute;
+            z-index: 2;
         }
 
 
@@ -105,6 +108,10 @@
                 margin-top: 15px;
                 margin-bottom: 10px;
             }
+            .navbar-brand img {
+                max-height: 50px;
+                height: auto;
+            }
             .btn-get-quotes{
                 margin-left: 0!important;
             } 
@@ -189,8 +196,8 @@
         }
 
         .footer-logo .logo-placeholder {
-            width: 300px;
-            height: 85px;
+            width: 230px;
+            height: 118px;;
             background-color: #fff;
             margin-bottom: 20px;
             border-radius: 4px;
@@ -200,10 +207,8 @@
         }
 
         .footer-logo .logo-placeholder img {
-            max-width: 100%;   
-            max-height: 100%;  
-            width: 90%;
-            height: auto;      
+            width: 122.74px;
+            height: 100px;
         }
 
 
