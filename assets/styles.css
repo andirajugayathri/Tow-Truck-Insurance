@@ -1895,6 +1895,12 @@
         font-size: 40px; 
         white-space: nowrap;
     }
+    .towtrk-card-text{
+        overflow: scroll;
+    }
+    .towtrk-card-text::-webkit-scrollbar {
+            display: none; 
+    }
 
     .banner-subtitle {
         font-size: 16px;
@@ -1920,6 +1926,12 @@
     .testimonials-title {
         font-size: 35px!important;
     }
+    .towtrk-card-text{
+        overflow: scroll;
+    }
+    .towtrk-card-text::-webkit-scrollbar {
+            display: none; 
+    }
 
     .banner-subtitle {
         font-size: 18px;
@@ -1937,7 +1949,12 @@
         font-size: 50px; 
         white-space: nowrap;
     }
-
+.towtrk-card-text{
+        overflow: scroll;
+    }
+    .towtrk-card-text::-webkit-scrollbar {
+            display: none; 
+    }
     .banner-subtitle {
         font-size: 18px;
         max-width: 600px;   
@@ -2005,7 +2022,7 @@
             padding: 23px 30px;
             border: none;
             min-height: 280px;
-            max-height: 295px;
+            height: 367px;
             display: flex;
             flex-direction: column;
             align-items: center;
@@ -2036,7 +2053,7 @@
 
         .towtrk-icon {
             width: 40px;
-            height: 40px;
+            height: 70px;
             background-color: transparent;
             border-radius: 8px;
             display: flex;
@@ -2061,10 +2078,10 @@
         .towtrk-card-text {
             color: #626262;
             font-size:16px;
+            text-align: left;
             flex-grow: 1;
             font-family: "Poppins";
            font-weight: 400;
-
         }
 
         .towtrk-indicators {
@@ -2107,6 +2124,12 @@
         @media (max-width: 991px) {
             .towtrk-hero-title {
                 font-size: 2rem;
+            }
+            .towtrk-card-text::-webkit-scrollbar {
+            display: none; 
+            }
+            .towtrk-card-text{
+                overflow: scroll;
             }
             
             .towtrk-card {
