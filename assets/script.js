@@ -5,7 +5,7 @@
                 this.indicators = document.querySelectorAll('.towtrk-indicator');
                 this.currentSlide = 0;
                 this.isDesktop = window.innerWidth >= 768;
-                this.totalSlides = this.isDesktop ? 2 : 5; // 2 slides for desktop, 6 for mobile
+                this.totalSlides = this.isDesktop ? 2 : 5; 
                 
                 this.init();
             }
