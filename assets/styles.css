@@ -114,6 +114,9 @@
                 max-height: 60px;
                 height: auto;
             }
+            .navbar-nav{
+                margin-top: 10px;
+            }
             .btn-get-quotes{
                 margin-left: 0!important;
             } 
@@ -137,7 +140,7 @@
              font-size: 16px;
            }
            .navbar-nav{
-                margin-top: 50px;
+                margin-top:50px;
                 margin-bottom:10px;
             }
              .contact-info{
@@ -158,6 +161,7 @@
         @media (max-width: 576px) {
             .navbar-nav {
                 margin-left: 0;
+                margin-top: 20px;
             }
         }
 
