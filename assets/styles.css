@@ -131,7 +131,11 @@
             }
             .navbar-nav{
                 margin-top: 15px;
+                margin-bottom: 0!important;
             }
+             .contact-section{
+                gap: 0px !important;
+             }
 
         }
 
@@ -162,7 +166,11 @@
             .navbar-nav {
                 margin-left: 0;
                 margin-top: 20px;
+                margin-bottom: 0!important;
             }
+             .contact-section{
+                gap: 0px !important;;
+             }
         }
 
        @media (min-width: 991px) and (max-width: 1200px) {
