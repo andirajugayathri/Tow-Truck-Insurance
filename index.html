@@ -52,18 +52,21 @@
         <div class="row">
             <div class="col-12">
                 <section class="quote-section">
-                   
-
-                    <div class="container-fluid" id="form">
+                   <div class="container-fluid" id="form">
                         <div class="form-container">
                                <form id="singleTruckForm" action="zoho/forms/concrete_truck.php" class="quote-form active" method="POST" novalidate="">
             <div class="row form-row">
                 <div class="col-md-4">
-                    <label class="form-label">Name<span class="required">*</span></label>
+                    <label class="form-label">Full Name<span class="required">*</span></label>
                     <input type="text" class="form-control" name="full_name" required="" fdprocessedid="2ja3if">
                     <div class="invalid-feedback"></div>
                 </div>
                 <div class="col-md-4">
+                    <label class="form-label">Company Name (if any)<span class="required">*</span></label>
+                    <input type="text" class="form-control" name="company_name" required="" fdprocessedid="i535sd">
+                    <div class="invalid-feedback"></div>
+                </div>
+                <!-- <div class="col-md-4">
                     <label class="form-label">Types of vehicle<span class="required">*</span></label>
                     <select class="form-select" name="vehicle_type" required="" fdprocessedid="znoqdb">
                         <option value="" selected="" disabled="">Please Select</option>
@@ -71,54 +74,61 @@
                         <option value="Other">Other Tow Truck</option>
                     </select>
                     <div class="invalid-feedback"></div>
-                </div>
-                <div class="col-md-4">
+                </div> -->
+                <!-- <div class="col-md-4">
                     <label class="form-label">Registration Number<span class="required">*</span></label>
                     <input type="text" class="form-control" name="registration_number" required="" fdprocessedid="hn9itnf">
                     <div class="invalid-feedback"></div>
-                </div>
-            </div>
-            
-            <div class="row form-row">
-                <div class="col-md-4">
-                    <label class="form-label">Email<span class="required">*</span></label>
-                    <input type="email" class="form-control" name="email" required="" fdprocessedid="aljq4x">
-                    <div class="invalid-feedback"></div>
-                </div>
-                <div class="col-md-4">
-                    <label class="form-label">Carrying Capacity (GVM - TARE WEIGHT)<span class="required">*</span></label>
-                    <select class="form-select" name="carrying_capacity" required="" fdprocessedid="b6r956">
-                        <option value="" selected="" disabled="">Select capacity</option>
-                        <option value="10 ton &amp; over">10 ton &amp; over</option>
-                        <option value="5 ton to 9.9 ton">5 ton to 9.9 ton</option>
-                        <option value="3.5 ton to 4.99 ton">3.5 ton to 4.99 ton</option>
-                        <option value="2 ton to 3.49 ton">2 ton to 3.49 ton</option>
-                        <option value="under 2 ton">under 2 ton</option>
-                    </select>
-                    <div class="invalid-feedback"></div>
-                </div>
-                <div class="col-md-4">
-                    <label class="form-label  labels">Sum Insured (Vehicle value)$<span class="required">*</span></label>
-                    <input type="text" class="form-control" style="border:2px solid #FF6B00" name="sum_insured" required="" fdprocessedid="gkmkvu">
-                    <div class="invalid-feedback"></div>
-                </div>
-            </div>
-            
-            <div class="row form-row">
+                </div> -->
                 <div class="col-md-4">
                     <label class="form-label">Contact Number<span class="required">*</span></label>
                     <input type="number" class="form-control" name="contact_number" required="" fdprocessedid="k3ck5f">
                     <div class="invalid-feedback"></div>
                 </div>
+            </div>
+            
+            <div class="row form-row">
                 <div class="col-md-4">
-                    <label class="form-label">Year, Make and Model (Truck details)<span class="required">*</span></label>
-                    <input type="text" class="form-control" name="truck_details" required="" fdprocessedid="cd70w">
+                    <label class="form-label">Email ID<span class="required">*</span></label>
+                    <input type="email" class="form-control" name="email" required="" fdprocessedid="aljq4x">
                     <div class="invalid-feedback"></div>
                 </div>
                 <div class="col-md-4">
-                    <label class="form-label labels">Marine (goods in transit cover)$<span class="required">*</span></label>
+                    <label class="form-label">Occupation<span class="required">*</span></label>
+                    <select class="form-select" name="occupation" required="" fdprocessedid="36acyr">
+                        <option value="" selected="" disabled="">Select occupation</option>
+                        <option value="Towing">Towing</option>
+                        <option value="Other">Other</option>
+                    </select>
+                    <div class="invalid-feedback">This field is required.</div>
+                </div>
+                <div class="col-md-4">
+                    <label class="form-label">Tow Truck details (Year, Make and Model)<span class="required">*</span></label>
+                    <input type="text" class="form-control" name="truck_details" required="" fdprocessedid="cd70w">
+                    <div class="invalid-feedback"></div>
+                </div>
+            </div>
+            
+            <div class="row form-row">
+                <div class="col-md-4">
+                    <label class="form-label  labels">Sum Insured (value of truck)$<span class="required">*</span></label>
+                    <input type="text" class="form-control" style="border:2px solid #FF6B00" name="sum_insured" required="" fdprocessedid="gkmkvu">
+                    <div class="invalid-feedback"></div>
+                </div>
+               <div class="col-md-4">
+                    <label class="form-label">Types of goods carried<span class="required">*</span></label>
+                    <select class="form-select" name="type_goods_carried" required="" fdprocessedid="nofopv">
+                        <option value="" selected="" disabled="">Select goods type</option>
+                        <option value="vehicle">Vehicle</option>
+                        <option value="Plant &amp; Equipment">Plant &amp; Equipment</option>
+                        <option value="Others">Others</option>
+                    </select>
+                    <div class="invalid-feedback"></div>
+                </div>
+                <div class="col-md-4">
+                    <label class="form-label labels">Marine Cargo Insurance<span class="required">*</span></label>
                     <select class="form-select" style="border:2px solid #FF6B00" name="marine_cover" required="" fdprocessedid="ub19mb">
-                        <option value="" selected="" disabled="">Select cover amount</option>
+                        <option value="" selected="" disabled="">Select</option>
                         <option value="No cover needed">No cover needed</option>
                         <option value="$50,000">$50,000</option>
                         <option value="$100,000">$100,000</option>
@@ -133,92 +143,44 @@
             
             <div class="row form-row">
                 <div class="col-md-4">
-                    <label class="form-label">Company Name (if any)<span class="required">*</span></label>
-                    <input type="text" class="form-control" name="company_name" required="" fdprocessedid="i535sd">
-                    <div class="invalid-feedback"></div>
-                </div>
-                <div class="col-md-4">
-                    <label class="form-label">Base operation postcode and Suburb<span class="required">*</span></label>
-                    <input type="text" class="form-control" name="base_operation" required="" fdprocessedid="f4lwdf">
-                    <div class="invalid-feedback"></div>
-                </div>
-                <div class="col-md-4">
-                    <label class="form-label">Number of years relevant truck licence held<span class="required">*</span></label>
-                    <select class="form-select" name="year_truck_licence_held" required="" fdprocessedid="vp9ptp">
-                        <option value="" selected="" disabled="">Select years</option>
-                        <option value="1 year">1 year</option>
-                        <option value="2 years">2 years</option>
-                        <option value="3 years">3 years</option>
-                        <option value="4 years">4 years</option>
-                        <option value="5 years">5 years</option>
-                        <option value="5+ years">5+ years</option>
-                    </select>
-                    <div class="invalid-feedback">This field is required.</div>
-                </div>
-            </div>
-            
-            <div class="row form-row">
-                <div class="col-md-4">
-                    <label class="form-label">Address<span class="required">*</span></label>
-                    <input type="text" class="form-control" name="address" required="" fdprocessedid="avp658">
-                    <div class="invalid-feedback"></div>
-                </div>
-                <div class="col-md-4">
-                    <label class="form-label">Radius of operation<span class="required">*</span></label>
-                    <select class="form-select" name="radius_operation" required="" fdprocessedid="8i3ika">
-                        <option value="" selected="" disabled="">Select radius</option>
-                        <option value="250km">250km</option>
-                        <option value="400km">400km</option>
-                        <option value="600km">600km</option>
-                        <option value="1000km">1000km</option>
-                        <option value="1500km">1500km</option>
-                        <option value="Australia-wide">Australia-wide</option>
+                    <label class="form-label">Business Interruption<span class="required">*</span></label>
+                    <select class="form-select" name="business-interruption" required="" fdprocessedid="nofopv">
+                        <option value="" selected="" disabled="">Select</option>
+                        <option value="required">Required</option>
+                        <option value="not-required">Not Required</option>
                     </select>
                     <div class="invalid-feedback"></div>
                 </div>
                 <div class="col-md-4">
-                    <label class="form-label labels">Number of truck insurance claims made in last 5 years $<span class="required">*</span></label>
-                    <select class="form-select" style="border:2px solid #FF6B00" name="number_truck_insurance" required="" fdprocessedid="dyyzko">
-                        <option value="" selected="" disabled="">Select number</option>
-                        <option value="None">None</option>
-                        <option value="One">One</option>
-                        <option value="Two">Two</option>
-                        <option value="Three">Three</option>
-                        <option value="Four">Four</option>
-                        <option value="Four+">Four+</option>
-                    </select>
-                    <div class="invalid-feedback"></div>
-                </div>
-            </div>
-            
-            <div class="row form-row">
-                <div class="col-md-4">
-                    <label class="form-label">Occupation<span class="required">*</span></label>
-                    <select class="form-select" name="occupation" required="" fdprocessedid="36acyr">
-                        <option value="" selected="" disabled="">Select occupation</option>
-                        <option value="Towing">Towing</option>
-                        <option value="Other">Other</option>
-                    </select>
-                    <div class="invalid-feedback">This field is required.</div>
-                </div>
-                <div class="col-md-4">
-                    <label class="form-label">Types of goods carried<span class="required">*</span></label>
-                    <select class="form-select" name="type_goods_carried" required="" fdprocessedid="nofopv">
-                        <option value="" selected="" disabled="">Select goods type</option>
-                        <option value="Plant &amp; Equipment">Plant &amp; Equipment</option>
-                        <option value="Others">Others</option>
-                    </select>
-                    <div class="invalid-feedback"></div>
-                </div>
-                <div class="col-md-4">
-                    <label class="form-label labels">Public Liability cover required $<span class="required">*</span></label>
+                    <label class="form-label labels">Public Liability<span class="required">*</span></label>
                     <select class="form-select" style="border:2px solid #FF6B00" name="public_liability_cover" required="" fdprocessedid="k9eqn">
-                        <option value="" selected="" disabled="">Select cover amount</option>
+                        <option value="" selected="" disabled="">Select</option>
+                        <option value="Required">Required</option>
                         <option value="Not Required">Not Required</option>
-                        <option value="$10M">$10M</option>
-                        <option value="$20M">$20M</option>
-                        <option value="$30M">$30M</option>
-                        <option value="More">More</option>
+                    </select>
+                    <div class="invalid-feedback"></div>
+                </div>
+                <div class="col-md-4">
+                    <label class="form-label labels">Hook Liability<span class="required">*</span></label>
+                    <select class="form-select" name="public_liability_cover" required="" fdprocessedid="k9eqn">
+                        <option value="" selected="" disabled="">Select</option>
+                        <option value="Not Required">Not Required</option>
+                        <option value="$100,000M">$100,000</option>
+                        <option value="$250,000">$250,000</option>
+                        <option value="$500,000/">$500,000</option>
+                        <option value="other">other</option>
+                    </select>
+                    <div class="invalid-feedback"></div>
+                </div>
+            </div>
+            
+            <div class="row form-row">
+                <div class="col-md-4">
+                    <label class="form-label">Do you require Finance<span class="required">*</span></label>
+                    <select class="form-select" name="require-finance" required="" fdprocessedid="k9eqn">
+                        <option value="" selected="" disabled="">Select</option>
+                        <option value="yes">Yes</option>
+                        <option value="no">No</option>
                     </select>
                     <div class="invalid-feedback"></div>
                 </div>
