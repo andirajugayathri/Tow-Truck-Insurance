@@ -642,7 +642,7 @@
 
             .cta-section {
                 flex-direction: column;
-                text-align: left;
+                text-align: center;
                 gap: 1rem;
             }
             .cta-content p {
@@ -1121,7 +1121,16 @@
        
         @media (max-width: 768px) {
             .testimonials-title {
-                font-size: 2rem;
+                font-size: 1.8rem;
+                text-align: center;
+            }
+
+            .rating-section{
+                justify-content: center;
+            }
+
+            .testi-title{
+                justify-content: center;
             }
             
             .rating-number {
@@ -1825,6 +1834,7 @@
             }
 
             .banner-content {
+                text-align: center;
                 max-width: 100%;
                 margin-left: auto;
             }
