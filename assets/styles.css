@@ -713,7 +713,7 @@
         }
         
         .main-subtitle {
-            color: #7f8c8d;
+            color: #626262;
             margin-bottom: 0;
             font-weight: 400;
             font-family: "Poppins";
@@ -1379,7 +1379,7 @@
 
 
 .submit-btn:hover {
-    background-color: #e55d00;
+    background-color: #E65A00;
 }
 @media (max-width: 768px) {
     .quote-section {
