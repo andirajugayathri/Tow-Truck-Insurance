@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -47,219 +48,223 @@
           </a>
    </section>
 
-<section class="truck-insurance-quote">
-  <h2 class="quote-heading" id="quote">Request A Quote</h2>
-        <div class="row">
-            <div class="col-12">
-                <section class="quote-section">
-                   <div class="container-fluid" id="form">
-                        <div class="form-container">
-                               <form id="singleTruckForm" action="zoho/forms/concrete_truck.php" class="quote-form active" method="POST" novalidate="">
-            <div class="row form-row">
-                <div class="col-md-4">
-                    <label class="form-label">Full Name<span class="required">*</span></label>
-                    <input type="text" class="form-control" name="full_name" required="" fdprocessedid="2ja3if">
-                    <div class="invalid-feedback"></div>
-                </div>
-                <div class="col-md-4">
-                    <label class="form-label">Company Name (if any)<span class="required">*</span></label>
-                    <input type="text" class="form-control" name="company_name" required="" fdprocessedid="i535sd">
-                    <div class="invalid-feedback"></div>
-                </div>
-                <!-- <div class="col-md-4">
-                    <label class="form-label">Types of vehicle<span class="required">*</span></label>
-                    <select class="form-select" name="vehicle_type" required="" fdprocessedid="znoqdb">
-                        <option value="" selected="" disabled="">Please Select</option>
-                        <option value="RIGID - Tow Truck">RIGID - Tow Truck</option>
-                        <option value="Other">Other Tow Truck</option>
-                    </select>
-                    <div class="invalid-feedback"></div>
-                </div> -->
-                <!-- <div class="col-md-4">
-                    <label class="form-label">Registration Number<span class="required">*</span></label>
-                    <input type="text" class="form-control" name="registration_number" required="" fdprocessedid="hn9itnf">
-                    <div class="invalid-feedback"></div>
-                </div> -->
-                <div class="col-md-4">
-                    <label class="form-label">Contact Number<span class="required">*</span></label>
-                    <input type="number" class="form-control" name="contact_number" required="" fdprocessedid="k3ck5f">
-                    <div class="invalid-feedback"></div>
-                </div>
-            </div>
-            
-            <div class="row form-row">
-                <div class="col-md-4">
-                    <label class="form-label">Email ID<span class="required">*</span></label>
-                    <input type="email" class="form-control" name="email" required="" fdprocessedid="aljq4x">
-                    <div class="invalid-feedback"></div>
-                </div>
-                <div class="col-md-4">
-                    <label class="form-label">Occupation<span class="required">*</span></label>
-                    <select class="form-select" name="occupation" required="" fdprocessedid="36acyr">
-                        <option value="" selected="" disabled="">Select occupation</option>
-                        <option value="Towing">Towing</option>
-                        <option value="Other">Other</option>
-                    </select>
-                    <div class="invalid-feedback">This field is required.</div>
-                </div>
-                <div class="col-md-4">
-                    <label class="form-label">Tow Truck details (Year, Make and Model)<span class="required">*</span></label>
-                    <input type="text" class="form-control" name="truck_details" required="" fdprocessedid="cd70w">
-                    <div class="invalid-feedback"></div>
-                </div>
-            </div>
-            
-            <div class="row form-row">
-                <div class="col-md-4">
-                    <label class="form-label  labels">Sum Insured (value of truck)$<span class="required">*</span></label>
-                    <input type="text" class="form-control" style="border:2px solid #FF6B00" name="sum_insured" required="" fdprocessedid="gkmkvu">
-                    <div class="invalid-feedback"></div>
-                </div>
-               <div class="col-md-4">
-                    <label class="form-label">Types of goods carried<span class="required">*</span></label>
-                    <select class="form-select" name="type_goods_carried" required="" fdprocessedid="nofopv">
-                        <option value="" selected="" disabled="">Select goods type</option>
-                        <option value="vehicle">Vehicle</option>
-                        <option value="Plant &amp; Equipment">Plant &amp; Equipment</option>
-                        <option value="Others">Others</option>
-                    </select>
-                    <div class="invalid-feedback"></div>
-                </div>
-                <div class="col-md-4">
-                    <label class="form-label labels">Marine Cargo Insurance<span class="required">*</span></label>
-                    <select class="form-select" style="border:2px solid #FF6B00" name="marine_cover" required="" fdprocessedid="ub19mb">
-                        <option value="" selected="" disabled="">Select</option>
-                        <option value="No cover needed">No cover needed</option>
-                        <option value="$50,000">$50,000</option>
-                        <option value="$100,000">$100,000</option>
-                        <option value="$200,000">$200,000</option>
-                        <option value="$500,000">$500,000</option>
-                        <option value="$1M">$1M</option>
-                        <option value="More">More</option>
-                    </select>
-                    <div class="invalid-feedback"></div>
-                </div>
-            </div>
-            
-            <div class="row form-row">
-                <div class="col-md-4">
-                    <label class="form-label">Business Interruption<span class="required">*</span></label>
-                    <select class="form-select" name="business-interruption" required="" fdprocessedid="nofopv">
-                        <option value="" selected="" disabled="">Select</option>
-                        <option value="required">Required</option>
-                        <option value="not-required">Not Required</option>
-                    </select>
-                    <div class="invalid-feedback"></div>
-                </div>
-                <div class="col-md-4">
-                    <label class="form-label labels">Public Liability<span class="required">*</span></label>
-                    <select class="form-select" style="border:2px solid #FF6B00" name="public_liability_cover" required="" fdprocessedid="k9eqn">
-                        <option value="" selected="" disabled="">Select</option>
-                        <option value="$10M">$10M</option>
-                         <option value="$20M">$20M</option>
-                        <option value="Not Required">Not Required</option>
-                    </select>
-                    <div class="invalid-feedback"></div>
-                </div>
-                <div class="col-md-4">
-                    <label class="form-label label">Hook Liability<span class="required">*</span></label>
-                    <select class="form-select" name="public_liability_cover" required="" fdprocessedid="k9eqn">
-                        <option value="" selected="" disabled="">Select</option>
-                        <option value="Not Required">Not Required</option>
-                        <option value="$100,000M">$100,000</option>
-                        <option value="$250,000">$250,000</option>
-                        <option value="$500,000/">$500,000</option>
-                        <option value="other">other</option>
-                    </select>
-                    <div class="invalid-feedback"></div>
-                </div>
-            </div>
-            
-            <div class="row form-row">
-                <div class="col-md-4">
-                    <label class="form-label">Do you require Finance<span class="required">*</span></label>
-                    <select class="form-select" name="require-finance" required="" fdprocessedid="k9eqn">
-                        <option value="" selected="" disabled="">Select</option>
-                        <option value="yes">Yes</option>
-                        <option value="no">No</option>
-                    </select>
-                    <div class="invalid-feedback"></div>
-                </div>
-            </div>
-             <div class="col-md-6">
-        <label for="captcha" class="form-label">Security Verification *</label>
-        <div class="captcha-container" style="background: #f8f9fa; padding: 15px; border-radius: 8px; margin-bottom: 10px;">
-            <div class="captcha-question" style="font-weight: bold; color: #333; margin-bottom: 10px;">What is 5 - 0?</div>
-            <div class="captcha-input-group" style="display: flex; align-items: center; gap: 10px;">
-                <input type="number" class="form-control" id="captcha" name="captcha" placeholder="Enter your answer" style="max-width: 150px;" required="" fdprocessedid="8vegym">
-                <button type="button" class="btn btn-outline-secondary btn-sm" onclick="generateCaptcha()" title="Generate new question" fdprocessedid="qq2wup">
-                    ↻ New
-                </button>
-            </div>
-        </div>
-        <div class="invalid-feedback"></div>
-    </div>
-            
-            <div class="submit-container text-center">
-                <button type="submit" class="submit-btn" fdprocessedid="dygxtm">Submit</button>
-            </div>
-        </form>
-     </div>
-    </section>
-</section>
+    <section class="truck-insurance-quote">
+    <h2 class="quote-heading" id="quote">Request A Quote</h2>
+            <div class="row">
+                <div class="col-12">
+                    <section class="quote-section">
+                    <div class="container-fluid" id="form">
+                            <div class="form-container">
+                <form id="singleTruckForm" 
+        action="zoho/forms/tow_truck_form.php" 
+        class="quote-form active" 
+        method="POST" 
+        novalidate 
+        aria-labelledby="formTitle">
 
-<!-- Tow Truck Insurance -->
-<section class="Tow-Truck-Insurance">
-        <div class="container-fluid">
-            <div class="row align-items-center">
-                <div class="col-lg-7 col-md-6 col-12">
-                    <div class="content-section">
-                        <h1 class="section-titles">Tow Truck Insurance</h1>
-                        <p class="description">
-                            <b>Tow truck insurance or wrecker insurance or recovery truck insurance</b> is essential protection for business owners or operators facing daily risks on roads in Australia. Whether you're running a single tow truck or managing a fleet across NSW, QLD, VIC, or nationwide, <b>tow truck liability insurance</b> protects your business from costly claims and legal liabilities.
-                        </p>
-                        <h2 class="section-subtitles">What Does Tow Truck Insurance Cover?</h2>
-                        
-                        <div class="row coverage-columns">
-                            <div class="col-lg-6 col-md-6">
-                                    <div class="coverage-item">
-                                        <div class="coverage-icon"><i class="fa-solid fa-arrow-right"></i></div>
-                                        <span>Hook Liability  </span>
-                                    </div>
-                                    <div class="coverage-item">
-                                        <div class="coverage-icon"><i class="fa-solid fa-arrow-right"></i></div>
-                                        <span>Marine Cargo </span>
-                                    </div>
-                                    <div class="coverage-item">
-                                        <div class="coverage-icon"><i class="fa-solid fa-arrow-right"></i></div>
-                                        <span>Tow Truck</span>
-                                    </div>
-                            </div>
-                            <div class="col-lg-6 col-md-6">
+    <!-- Give your form a clear title for screen readers -->
+    <h2 id="formTitle" class="visually-hidden">Tow Truck Insurance Quote Form</h2>
+
+    <div class="row form-row">
+        <div class="col-md-4">
+        <label for="full_name" class="form-label">Full Name<span aria-hidden="true">*</span></label>
+        <input type="text" id="full_name" class="form-control" name="full_name" required 
+                aria-required="true" aria-describedby="fullNameError">
+        <div class="invalid-feedback" id="fullNameError">Please enter your full name.</div>
+        </div>
+
+        <div class="col-md-4">
+        <label for="company_name" class="form-label">Company Name (if any)<span aria-hidden="true">*</span></label>
+        <input type="text" id="company_name" class="form-control" name="company_name" required 
+                aria-required="true" aria-describedby="companyNameError">
+        <div class="invalid-feedback" id="companyNameError">Please enter your company name.</div>
+        </div>
+
+        <div class="col-md-4">
+        <label for="contact_number" class="form-label">Contact Number<span aria-hidden="true">*</span></label>
+        <input type="tel" id="contact_number" inputmode="tel" class="form-control" name="contact_number" required 
+                aria-required="true" aria-describedby="contactNumberError">
+        <div class="invalid-feedback" id="contactNumberError">Please enter your contact number.</div>
+        </div>
+    </div>
+
+    <div class="row form-row">
+        <div class="col-md-4">
+        <label for="email" class="form-label">Email ID<span aria-hidden="true">*</span></label>
+        <input type="email" id="email" class="form-control" name="email" required 
+                aria-required="true" aria-describedby="emailError">
+        <div class="invalid-feedback" id="emailError">Please enter a valid email.</div>
+        </div>
+
+        <div class="col-md-4">
+        <label for="occupation" class="form-label">Occupation<span aria-hidden="true">*</span></label>
+        <select id="occupation" class="form-select" name="occupation" required 
+                aria-required="true" aria-describedby="occupationError">
+            <option value="" disabled selected>Select occupation</option>
+            <option value="Towing">Towing</option>
+            <option value="Other">Other</option>
+        </select>
+        <div class="invalid-feedback" id="occupationError">Please select an occupation.</div>
+        </div>
+
+        <div class="col-md-4">
+        <label for="truck_details" class="form-label">Tow Truck Details (Year, Make, Model)<span aria-hidden="true">*</span></label>
+        <input type="text" id="truck_details" class="form-control" name="truck_details" required 
+                aria-required="true" aria-describedby="truckDetailsError">
+        <div class="invalid-feedback" id="truckDetailsError">Please enter truck details.</div>
+        </div>
+    </div>
+
+    <div class="row form-row">
+        <div class="col-md-4">
+        <label for="sum_insured" class="form-label">Sum Insured (Value of Truck in $)<span aria-hidden="true">*</span></label>
+        <input type="text" id="sum_insured" class="form-control" name="sum_insured" style="border:2px solid #FF6B00" required 
+                aria-required="true" aria-describedby="sumInsuredError">
+        <div class="invalid-feedback" id="sumInsuredError">Please enter the insured value.</div>
+        </div>
+
+        <div class="col-md-4">
+        <label for="type_goods_carried" class="form-label">Types of Goods Carried<span aria-hidden="true">*</span></label>
+        <select id="type_goods_carried" class="form-select" name="type_goods_carried" required 
+                aria-required="true" aria-describedby="goodsError">
+            <option value="" disabled selected>Select goods type</option>
+            <option value="Vehicle">Vehicle</option>
+            <option value="Plant & Equipment">Plant & Equipment</option>
+            <option value="Others">Others</option>
+        </select>
+        <div class="invalid-feedback" id="goodsError">Please select goods type.</div>
+        </div>
+
+        <div class="col-md-4">
+        <label for="marine_cover" class="form-label">Marine Cargo Insurance<span aria-hidden="true">*</span></label>
+        <select id="marine_cover" class="form-select" name="marine_cover" style="border:2px solid #FF6B00" required 
+                aria-required="true" aria-describedby="marineError">
+            <option value="" disabled selected>Select</option>
+            <option value="No cover needed">No cover needed</option>
+            <option value="$50,000">$50,000</option>
+            <option value="$100,000">$100,000</option>
+            <option value="$200,000">$200,000</option>
+            <option value="$500,000">$500,000</option>
+            <option value="$1M">$1M</option>
+            <option value="More">More</option>
+        </select>
+        <div class="invalid-feedback" id="marineError">Please select a marine cover option.</div>
+        </div>
+    </div>
+
+    <div class="row form-row">
+        <div class="col-md-4">
+        <label for="business_interruption" class="form-label">Business Interruption<span aria-hidden="true">*</span></label>
+        <select id="business_interruption" class="form-select" name="business_interruption" required 
+                aria-required="true" aria-describedby="businessError">
+            <option value="" disabled selected>Select</option>
+            <option value="required">Required</option>
+            <option value="not-required">Not Required</option>
+        </select>
+        <div class="invalid-feedback" id="businessError">Please select an option.</div>
+        </div>
+
+        <div class="col-md-4">
+        <label for="public_liability_cover" class="form-label">Public Liability<span aria-hidden="true">*</span></label>
+        <select id="public_liability_cover" class="form-select" name="public_liability_cover" style="border:2px solid #FF6B00" required 
+                aria-required="true" aria-describedby="publicLiabilityError">
+            <option value="" disabled selected>Select</option>
+            <option value="$10M">$10M</option>
+            <option value="$20M">$20M</option>
+            <option value="Not Required">Not Required</option>
+        </select>
+        <div class="invalid-feedback" id="publicLiabilityError">Please select a cover option.</div>
+        </div>
+
+        <div class="col-md-4">
+        <label for="hook_liability" class="form-label">Hook Liability<span aria-hidden="true">*</span></label>
+        <select id="hook_liability" class="form-select" name="hook_liability" required 
+                aria-required="true" aria-describedby="hookError">
+            <option value="" disabled selected>Select</option>
+            <option value="Not Required">Not Required</option>
+            <option value="$100,000">$100,000</option>
+            <option value="$250,000">$250,000</option>
+            <option value="$500,000">$500,000</option>
+            <option value="Other">Other</option>
+        </select>
+        <div class="invalid-feedback" id="hookError">Please select hook liability cover.</div>
+        </div>
+    </div>
+
+    <div class="row form-row">
+        <div class="col-md-4">
+        <label for="require_finance" class="form-label">Do you require Finance?<span aria-hidden="true">*</span></label>
+        <select id="require_finance" class="form-select" name="require_finance" required 
+                aria-required="true" aria-describedby="financeError">
+            <option value="" disabled selected>Select</option>
+            <option value="yes">Yes</option>
+            <option value="no">No</option>
+        </select>
+        <div class="invalid-feedback" id="financeError">Please select an option.</div>
+        </div>
+    </div>
+
+    <div class="submit-container text-center">
+        <button type="submit" class="submit-btn">Submit</button>
+    </div>
+    </form>
+
+        </div>
+        </section>
+    </section>
+
+  <!-- Tow Truck Insurance -->
+    <section class="Tow-Truck-Insurance">
+            <div class="container-fluid">
+                <div class="row align-items-center">
+                    <div class="col-lg-7 col-md-6 col-12">
+                        <div class="content-section">
+                            <h1 class="section-titles">Tow Truck Insurance</h1>
+                            <p class="description">
+                                <b>Tow truck insurance or wrecker insurance or recovery truck insurance</b> is essential protection for business owners or operators facing daily risks on roads in Australia. Whether you're running a single tow truck or managing a fleet across NSW, QLD, VIC, or nationwide, <b>tow truck liability insurance</b> protects your business from costly claims and legal liabilities.
+                            </p>
+                            <h2 class="section-subtitles">What Does Tow Truck Insurance Cover?</h2>
+                            
+                            <div class="row coverage-columns">
+                                <div class="col-lg-6 col-md-6">
                                         <div class="coverage-item">
                                             <div class="coverage-icon"><i class="fa-solid fa-arrow-right"></i></div>
-                                            <span>Business Interruption</span>
+                                            <span>Hook Liability  </span>
                                         </div>
                                         <div class="coverage-item">
                                             <div class="coverage-icon"><i class="fa-solid fa-arrow-right"></i></div>
-                                            <span>Public Liability</span>
+                                            <span>Marine Cargo </span>
                                         </div>
+                                        <div class="coverage-item">
+                                            <div class="coverage-icon"><i class="fa-solid fa-arrow-right"></i></div>
+                                            <span>Tow Truck</span>
+                                        </div>
+                                </div>
+                                <div class="col-lg-6 col-md-6">
+                                            <div class="coverage-item">
+                                                <div class="coverage-icon"><i class="fa-solid fa-arrow-right"></i></div>
+                                                <span>Business Interruption</span>
+                                            </div>
+                                            <div class="coverage-item">
+                                                <div class="coverage-icon"><i class="fa-solid fa-arrow-right"></i></div>
+                                                <span>Public Liability</span>
+                                            </div>
+                                </div>
                             </div>
-                        </div>
-                        <div class="note-box">
-                            <strong>Note:</strong> Available Hook Liability Limits - $100K, $250K, $500K, $750K, or $1M.
+                            <div class="note-box">
+                                <strong>Note:</strong> Available Hook Liability Limits - $100K, $250K, $500K, $750K, or $1M.
+                            </div>
                         </div>
                     </div>
-                </div>
-                <div class="col-lg-5 col-md-6 col-12">
-                    <div class="image-container">
-                        <img src="assets/images/tow-truck-insurance-img1.png"
-                             alt="Tow truck loading a vehicle" 
-                             class="tow-truck-image">
+                    <div class="col-lg-5 col-md-6 col-12">
+                        <div class="image-container">
+                            <img src="assets/images/tow-truck-insurance-img1.png"
+                                alt="Tow truck loading a vehicle" 
+                                class="tow-truck-image">
+                        </div>
                     </div>
                 </div>
             </div>
-        </div>
     </section>
 
     <section class="towtrk-insurance-section">
@@ -452,7 +457,7 @@
         </div>
     </section>
 
-      <section class="insurance-section">
+    <section class="insurance-section">
         <div class="container">
             <div class="row align-items-center first-row">
                 <div class="col-lg-4 col-md-12 mb-">
@@ -468,24 +473,24 @@
                         <div class="col-lg-6 col-md-6 col-sm-12">
                             <div class="feature-card">
                                 <div class="icon-box">
-                                    <img src="assets/images/fast-quote-icon.png" alt="">
+                                    <img src="assets/images/fast-quote-icon.png" alt="fast-quote-icon img">
                                 </div>
                                 <h3 class="feature-title">Fast Quote Processing</h3>
                                 <p class="feature-description">Get competitive <b>tow truck insurance Australia</b> quotes in under 24 hours with streamlined application processes designed specifically for busy operators.</p>
                                 <div class="arrow-icon">
-                                    <img src="assets/images/uturn-img.png" alt="">
+                                    <img src="assets/images/uturn-img.png" alt="uturn-img">
                                 </div>
                             </div>
                         </div>
                         <div class="col-lg-6 col-md-6 col-sm-12">
                             <div class="feature-card">
                                 <div class="icon-box">
-                                    <img src="assets/images/expert-icon.png" alt="">
+                                    <img src="assets/images/expert-icon.png" alt="expert-icon">
                                 </div>
                                 <h3 class="feature-title">Expert Claims Support</h3>
                                 <p class="feature-description">Dedicated claims teams with tow truck industry experience ensure faster settlements and minimized business disruption when support is needed most.</p>
                                 <div class="arrow-icon">
-                                    <img src="assets/images/uturn-img.png" alt="">
+                                    <img src="assets/images/uturn-img.png" alt="uturn-img">
                                 </div>
                             </div>
                         </div>
@@ -497,36 +502,36 @@
                 <div class="col-lg-4 col-md-6 col-sm-12">
                     <div class="feature-card">
                         <div class="icon-box">
-                            <img src="assets/images/competative-icon.png" alt="">
+                            <img src="assets/images/competative-icon.png" alt="competitive">
                         </div>
                         <h3 class="feature-title">Competitive Premiums</h3>
                         <p class="feature-description"><b>Best tow truck insurance provider</b> pricing through extensive insurer networks. Negotiate <b>affordable premiums for tow trucks</b> without compromising coverage quality.</p>
                         <div class="arrow-icon">
-                           <img src="assets/images/uturn-img.png" alt="">
+                           <img src="assets/images/uturn-img.png" alt="uturn-img">
                         </div>
                     </div>
                 </div>
                 <div class="col-lg-4 col-md-6 col-sm-12">
                     <div class="feature-card">
                         <div class="icon-box">
-                            <img src="assets/images/nation-wide.png" alt="">
+                            <img src="assets/images/nation-wide.png" alt="nation-wide">
                         </div>
                         <h3 class="feature-title">Nationwide Coverage</h3>
                         <p class="feature-description">Comprehensive policies covering operations across all Australian states including <b>NSW tow truck cover, QLD tow truck cover, VIC tow truck cover,</b> and nationwide (Australia) interstate operations.</p>
                         <div class="arrow-icon">
-                           <img src="assets/images/uturn-img.png" alt="">
+                           <img src="assets/images/uturn-img.png" alt="uturn-img">
                         </div>
                     </div>
                 </div>
                 <div class="col-lg-4 col-md-6 col-sm-12">
                     <div class="feature-card">
                         <div class="icon-box">
-                            <img src="assets/images/industry-icon.png" alt="">
+                            <img src="assets/images/industry-icon.png" alt="industry-icon">
                         </div>
                         <h3 class="feature-title">Industry Experience</h3>
                         <p class="feature-description">Specialized commercial vehicle insurance with deep understanding of <b>tow truck liability insurance</b> requirements and industry-specific risks.</p>
                         <div class="arrow-icon">
-                           <img src="assets/images/uturn-img.png" alt="">
+                           <img src="assets/images/uturn-img.png" alt="uturn-img">
                         </div>
                     </div>
                 </div>
@@ -534,7 +539,7 @@
         </div>
     </section>
 
-  <section class="testimonials">
+    <section class="testimonials">
     <div class="testimonials-section">
         <div class="container">
             <div class="row">
@@ -681,10 +686,10 @@
             </div>
         </div>
     </div>
-</section>
+    </section>
 
 
-<section class="faq-section py-5">
+    <section class="faq-section py-5">
   <div class="container">
     <h2 class="text-center fw-bold mb-5 text-orange">Frequently Asked Questions</h2>
 
@@ -756,12 +761,12 @@
       </div>
     </div>
   </div>
-</section>   
+    </section>   
 
-
+ <div id="footer"></div>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
 <script src="assets/script.js"></script>
-   <div id="footer"></div>
+   
     <script>
         fetch('navbar.html')
         .then(res => res.text())
